@@ -1,9 +1,17 @@
-# 微型店家簽單王 — LINE 整合版電子簽單系統 — 規格計劃書 v3.0 (sweet-spot rewrite)
+# 微型店家簽單王 — LINE 整合版電子簽單系統 — 規格計劃書 v3.0.2 (sweet-spot rewrite + fleet hardening)
 
-> 版本：v3.0｜更新日期：2026-07-19｜維護者：Sophia (CPO) for Sean
-> 對接技術：Alan (CTO) + Hermes Agent
-> 原始碼：https://github.com/openclawsean024-create/sign-sheet
-> Live：https://sign-sheet-six.vercel.app/
+> **v3.0.2 patch（2026-09-07 by Sean 10-repo-fleet Batch 8B）** —
+> 對齊 fleet-wide 規格契約（SPEC §1–§19 + Definition of Done + 部署契約）。
+> 本次變更為**部署面 / CI 面 hardening**，不變更產品 spec：
+> - 新增 `PRD/CHANGELOG.md`（v1.0 / v3.0 sweet-spot / v3.0.2 fleet hardening）
+> - 新增 `.github/workflows/ci.yml`（4-job：lint / test / build / deploy to GitHub Pages）
+> - Pages 部署目標：純靜態 `dashboard.html`（mint 主題 + Tailwind CDN + localStorage 持久化）
+> - 既有 v3.0 sweet-spot rewrite v2 的產品 spec 全部保留（§1–§18 不變）
+
+- 主版本：v3.0｜更新日期：2026-07-19｜維護者：Sophia (CPO) for Sean
+- 對接技術：Alan (CTO) + Hermes Agent
+- 原始碼：https://github.com/openclawsean024-create/sign-sheet
+- Live：https://sign-sheet-six.vercel.app/
 - 本次重寫動機：**Sweet Spot 體檢 3/10，DocuSign 在台灣已是企業默認、轉換成本高**。本次**放棄企業電子簽名市場**，改做**微型店家（5-20 人）+ LINE 整合的輕量電子簽單**（出貨單/維修單/服務單），瞄準**DocuSign/Adobe Sign 太貴太複雜 + 微型店家確實有數位化需求**的甜蜜點。
 - **v3.0 sweet-spot rewrite v2（2026-07-19 Group D 批次）**：本次強化重點為「**DocuSign 在台灣微型店家真實失敗數據 + LINE 整合的 30 萬微型店家可觸達路徑**」。
 
